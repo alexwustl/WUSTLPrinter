@@ -1,0 +1,130 @@
+#App {
+  display:flex;
+}
+/*https://stackoverflow.com/questions/90178/make-a-div-fill-the-height-of-the-remaining-screen-space*/
+/*Used above for the flex stuff with my footer and my container to get the footer at the bottom of the page*/
+
+#content {
+  min-width:80%;
+  width:100%;
+  display:flex;
+  flex-flow:column;
+}
+header {
+  display:flex;
+  flex: 0 0 auto;
+}
+header, footer{
+  background-color: #a51417;
+  color:#fff;
+}
+header h1,footer p {
+  margin:auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align:center;
+}
+
+header h1 a {
+  color:inherit;
+  text-decoration: none;
+}
+
+header button {
+  margin: 10px;
+  color: #fff;
+  background: none;
+  border: none;
+  align-self: left;
+  min-width:48px;
+}
+
+html{
+  position: relative;
+  min-height: 100%;
+  overflow-x:hidden;
+}
+body{
+  margin:0 0 50px;
+}
+/*http://howtocenterincss.com for vertical centering*/
+footer {
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:1px 0;
+  position: absolute;
+  bottom:0;
+  left:0;
+  height: 50px;
+}
+button:hover,:focus {
+  border: 3px solid white;
+}
+#search :focus {
+  border: 3px solid #a51417;
+}
+#search button:focus{
+  border: 3px solid white;
+}
+
+#map {
+  text-align:center;
+  height:50%;
+}
+#search li{
+  color:#fff;
+}
+#search {
+  display:none;
+  width:100%;
+  min-width:250px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:20px;
+  padding-left:10px;
+  padding-right:10px;
+  background-color: #aaa;
+  height: calc(100vh - 70px);
+  overflow-y:scroll;
+}
+#search input,#search button{
+  color: #000;
+  background-color: #fff;
+  border: none;
+  width:100%;
+  padding: 10px 0px;
+  margin:auto;
+}
+#search button{
+  margin: 10px auto;
+  width:100%;
+  background-color: #b23d3d;
+  color:#fff;
+}
+#search ul{
+  padding:0;
+  margin:auto;
+
+}
+#more {
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+#searchNearMe {
+  width: 80%;
+  margin:10px auto;
+  padding:10px;
+  background-color: #a51417;
+  border: 0px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#searchNearMe:focus{
+  border: 3px solid #59f442;
+}
